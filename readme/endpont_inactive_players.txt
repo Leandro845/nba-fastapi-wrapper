@@ -1,0 +1,93 @@
+Endpoint: /inactive_players
+
+Description:
+This endpoint retrieves information about inactive players in the NBA.
+
+Usage:
+Send a GET request to /inactive_players to retrieve information about inactive players.
+
+Response Format:
+The response contains a JSON object with information about inactive players in the NBA. Each player includes details such as their name, team, position, height, weight, and more.
+
+Example Request:
+GET /inactive_players
+
+Example Response:
+{
+    "inactive_players": [
+        {
+            "full_name": "Kobe Bryant",
+            "team": "Retired",
+            "position": "Guard",
+            "height": "6-6",
+            "weight": "212 lbs",
+            ...
+        },
+        {
+            "full_name": "Tim Duncan",
+            "team": "Retired",
+            "position": "Forward-Center",
+            "height": "6-11",
+            "weight": "250 lbs",
+            ...
+        },
+        ...
+    ]
+}
+
+Error Handling:
+If an error occurs while retrieving the inactive player information, the endpoint returns a JSON object with an "error" key containing a description of the error.
+
+Example Error Response:
+{
+    "error": "Failed to retrieve inactive player information: Connection timeout"
+}
+
+
+# Em portugues
+
+
+Endpoint: /inactive_players
+
+Descrição:
+Este endpoint recupera informações sobre jogadores inativos na NBA.
+
+Utilização:
+Envie uma solicitação GET para /inactive_players para recuperar informações sobre jogadores inativos.
+
+Formato da Resposta:
+A resposta contém um objeto JSON com informações sobre jogadores inativos na NBA. Cada jogador inclui detalhes como seu nome, time, posição, altura, peso e mais.
+
+Exemplo de Solicitação:
+GET /inactive_players
+
+Exemplo de Resposta:
+{
+    "jogadores_inativos": [
+        {
+            "nome_completo": "Kobe Bryant",
+            "time": "Aposentado",
+            "posição": "Ala-armador",
+            "altura": "6-6",
+            "peso": "212 lbs",
+            ...
+        },
+        {
+            "nome_completo": "Tim Duncan",
+            "time": "Aposentado",
+            "posição": "Pivô-Ala",
+            "altura": "6-11",
+            "peso": "250 lbs",
+            ...
+        },
+        ...
+    ]
+}
+
+Tratamento de Erros:
+Se ocorrer um erro durante a recuperação das informações dos jogadores inativos, o endpoint retorna um objeto JSON com uma chave "error" contendo uma descrição do erro.
+
+Exemplo de Resposta de Erro:
+{
+    "error": "Falha ao recuperar as informações dos jogadores inativos: Tempo limite de conexão"
+}

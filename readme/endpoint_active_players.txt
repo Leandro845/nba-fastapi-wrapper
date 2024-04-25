@@ -1,0 +1,93 @@
+Endpoint: /active_players
+
+Description:
+This endpoint retrieves information about active players in the NBA.
+
+Usage:
+Send a GET request to /active_players to retrieve information about active players.
+
+Response Format:
+The response contains a JSON object with information about active players in the NBA. Each player includes details such as their name, team, position, height, weight, and more.
+
+Example Request:
+GET /active_players
+
+Example Response:
+{
+    "active_players": [
+        {
+            "full_name": "LeBron James",
+            "team": "Los Angeles Lakers",
+            "position": "Forward",
+            "height": "6-9",
+            "weight": "250 lbs",
+            ...
+        },
+        {
+            "full_name": "Kevin Durant",
+            "team": "Brooklyn Nets",
+            "position": "Forward",
+            "height": "6-10",
+            "weight": "240 lbs",
+            ...
+        },
+        ...
+    ]
+}
+
+Error Handling:
+If an error occurs while retrieving the active player information, the endpoint returns a JSON object with an "error" key containing a description of the error.
+
+Example Error Response:
+{
+    "error": "Failed to retrieve active player information: Connection timeout"
+}
+
+
+# Em portugues
+
+
+Endpoint: /active_players
+
+Descrição:
+Este endpoint recupera informações sobre jogadores ativos na NBA.
+
+Utilização:
+Envie uma solicitação GET para /active_players para recuperar informações sobre jogadores ativos.
+
+Formato da Resposta:
+A resposta contém um objeto JSON com informações sobre jogadores ativos na NBA. Cada jogador inclui detalhes como seu nome, time, posição, altura, peso e mais.
+
+Exemplo de Solicitação:
+GET /active_players
+
+Exemplo de Resposta:
+{
+    "jogadores_ativos": [
+        {
+            "nome_completo": "LeBron James",
+            "time": "Los Angeles Lakers",
+            "posição": "Ala",
+            "altura": "6-9",
+            "peso": "250 lbs",
+            ...
+        },
+        {
+            "nome_completo": "Kevin Durant",
+            "time": "Brooklyn Nets",
+            "posição": "Ala",
+            "altura": "6-10",
+            "peso": "240 lbs",
+            ...
+        },
+        ...
+    ]
+}
+
+Tratamento de Erros:
+Se ocorrer um erro durante a recuperação das informações dos jogadores ativos, o endpoint retorna um objeto JSON com uma chave "error" contendo uma descrição do erro.
+
+Exemplo de Resposta de Erro:
+{
+    "error": "Falha ao recuperar as informações dos jogadores ativos: Tempo limite de conexão"
+}

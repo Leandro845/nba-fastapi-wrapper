@@ -1,0 +1,88 @@
+Endpoint: /games
+
+Description:
+This endpoint retrieves information about upcoming games in the NBA.
+
+Usage:
+Send a GET request to /games to retrieve information about upcoming games.
+
+Response Format:
+The response contains a JSON object with information about the upcoming games. Each game includes details such as teams, date, and venue.
+
+Example Request:
+GET /games
+
+Example Response:
+{
+    "games": [
+        {
+            "home_team": "Los Angeles Lakers",
+            "away_team": "Golden State Warriors",
+            "date": "2024-04-26",
+            "venue": "Staples Center"
+        },
+        {
+            "home_team": "Boston Celtics",
+            "away_team": "Brooklyn Nets",
+            "date": "2024-04-26",
+            "venue": "TD Garden"
+        },
+        ...
+    ]
+}
+
+Error Handling:
+If an error occurs while retrieving the game information, the endpoint returns a JSON object with an "error" key containing a description of the error.
+
+Example Error Response:
+{
+    "error": "Failed to retrieve game information: Connection timeout"
+}
+
+
+# Em portugues
+
+
+Endpoint: /jogos
+
+Descrição:
+Este endpoint recupera informações sobre os próximos jogos na NBA.
+
+Utilização:
+Envie uma solicitação GET para /jogos para recuperar informações sobre os próximos jogos.
+
+Formato da Resposta:
+A resposta contém um objeto JSON com informações sobre os próximos jogos. Cada jogo inclui detalhes como equipes, data e local.
+
+Exemplo de Solicitação:
+GET /jogos
+
+Exemplo de Resposta:
+{
+    "jogos": [
+        {
+            "time_casa": "Los Angeles Lakers",
+            "time_visitante": "Golden State Warriors",
+            "data": "2024-04-26",
+            "local": "Staples Center"
+        },
+        {
+            "time_casa": "Boston Celtics",
+            "time_visitante": "Brooklyn Nets",
+            "data": "2024-04-26",
+            "local": "TD Garden"
+        },
+        ...
+    ]
+}
+
+Tratamento de Erros:
+Se ocorrer um erro durante a recuperação das informações do jogo, o endpoint retorna um objeto JSON com uma chave "error" contendo uma descrição do erro.
+
+Exemplo de Resposta de Erro:
+{
+    "error": "Falha ao recuperar as informações do jogo: Tempo limite de conexão"
+}
+
+
+

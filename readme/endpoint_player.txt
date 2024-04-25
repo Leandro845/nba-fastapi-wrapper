@@ -1,0 +1,71 @@
+Endpoint: /player/{player}
+
+Description:
+This endpoint retrieves information about a NBA player based on their name.
+
+Usage:
+Send a GET request to /player/{player} to retrieve information about a player. Replace {player} with the full name of the player.
+
+Response Format:
+The response contains a JSON object with information about the player. This includes details such as their team, position, height, weight, and more.
+
+Example Request:
+GET /player/LeBron James
+
+Example Response:
+{
+    "player": {
+        "full_name": "LeBron James",
+        "team": "Los Angeles Lakers",
+        "position": "Forward",
+        "height": "6-9",
+        "weight": "250 lbs",
+        ...
+    }
+}
+
+Error Handling:
+If an error occurs while retrieving the player information, the endpoint returns a JSON object with an "error" key containing a description of the error.
+
+Example Error Response:
+{
+    "error": "Failed to retrieve player information: Player not found"
+}
+
+
+# Em portugues
+
+
+Endpoint: /player/{player}
+
+Descrição:
+Este endpoint recupera informações sobre um jogador da NBA com base em seu nome.
+
+Utilização:
+Envie uma solicitação GET para /player/{player} para recuperar informações sobre um jogador. Substitua {player} pelo nome completo do jogador.
+
+Formato da Resposta:
+A resposta contém um objeto JSON com informações sobre o jogador. Isso inclui detalhes como seu time, posição, altura, peso e mais.
+
+Exemplo de Solicitação:
+GET /player/LeBron James
+
+Exemplo de Resposta:
+{
+    "jogador": {
+        "nome_completo": "LeBron James",
+        "time": "Los Angeles Lakers",
+        "posição": "Ala",
+        "altura": "6-9",
+        "peso": "250 lbs",
+        ...
+    }
+}
+
+Tratamento de Erros:
+Se ocorrer um erro durante a recuperação das informações do jogador, o endpoint retorna um objeto JSON com uma chave "error" contendo uma descrição do erro.
+
+Exemplo de Resposta de Erro:
+{
+    "error": "Falha ao recuperar as informações do jogador: Jogador não encontrado"
+}
